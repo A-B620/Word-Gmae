@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[url('./assets/pics/bg.png')] bg-cover bg-no-repeat h-screen flex justify-center items-center">
+
+    <div class="notifications flex flex-row bg-slate-500 xl:top-20 bg-opacity-50 justify-center absolute  top-10 w-[380px] h-[40px] text-[#97A3B6] rounded-xl content-center ">
+        <span class="score mr-10 text-[22px]  mt-1 font-semibold ">Score: 0</span>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5N2EzYjYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1hbGFybS1jbG9jay1jaGVjayI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMyIgcj0iOCIvPjxwYXRoIGQ9Ik01IDMgMiA2Ii8+PHBhdGggZD0ibTIyIDYtMy0zIi8+PHBhdGggZD0iTTYuMzggMTguNyA0IDIxIi8+PHBhdGggZD0iTTE3LjY0IDE4LjY3IDIwIDIxIi8+PHBhdGggZD0ibTkgMTMgMiAyIDQtNCIvPjwvc3ZnPg==" alt="" class="scale-[70%] ">
+        <span class="timer self-center">- : --</span>
+        <div class="NOTI2 bg-opacity-80 p-2 space-y-6 rounded-xl absolute top-32 z-30 text-[20px] text-white hidden flex-col bg-[#97A3B6] h-44 justify-center items-center  w-44">
+            <h1 class="underline-offset-8">section2</h1>
+            <p class="text-[12px] align-bottom"></p>
+            
+        </div>
+    </div>
+
+    <div class="bg-[#030616] w-[380px] rounded-xl">
+
+        <div class="flex mt-7 flex-col items-center m-4 h-fit space-y-7">
+             <img src="./assets/pics/Word Scramblle.svg" alt=" ">
+            <p class="displayscreen rounded-lg w-[340px] pt-2 h-[70px] bg-[#4A5567] shadow-xl text-[#97A3B6] tracking-[10px] overflow-auto text-center p-0  text-[32px] animate-pulse"> </p>
+        </div>
+
+
+        <div class="text-[12px] text-[#4A5567] flex px-16 ">
+             <ol class="tries list-none flex space-x-1 items-center">
+                <li class="counter  ">Tries(5/5):</li>
+                <li class=" child h-[5px] w-[5px] rounded-full bg-[#7429C6]"></li>
+                <li class=" child h-[5px] w-[5px] rounded-full bg-[#7429C6]"></li>
+                <li class=" child h-[5px] w-[5px] rounded-full bg-[#7429C6]"></li>
+                <li class=" child h-[5px] w-[5px] rounded-full bg-[#7429C6]"></li>
+                <li class=" child h-[5px] w-[5px] rounded-full bg-[#7429C6]"></li>
+             </ol>
+
+             <ol class="mistakes ml-16 list-none flex flex-row gap-2">
+                <li class="">Mistakes:</li>
+             </ol>
+        </div>
+
+
+
+
+        <div class="h-[100px] answersection justify-center text-[16px] animate-pulse text-wrap flex flex-row space-x-2 items-center answer-space">
+                 <span class="bg-slate-500 opacity-60 w-[340px] h-[40px] rounded-lg" ></span>
+        </div>
+
+
+        <div class="buttons flex text-[16px] mb-8 justify-center  space-x-10 text-white">
+            <button class="h-20px p-1 w-[90px]  hover:shadow-[-2px_2px_2px_#7429C6] hover:scale-110 randbtn shadow-[0px_5px_1px_#672171] rounded-lg bg-[#C951E7]">Random</button>
+
+            <button class="h-20px p-1 reset w-[90px]   hover:shadow-[-2px_2px_2px_#7429C6] hover:scale-110 shadow-[0px_5px_1px_#672171] rounded-lg bg-[#C951E7]">Reset</button>
+        </div>
+    </div>
+
+</body>
+
+<script src="./script.js">   
+
+
+</script>
+
+</html>
