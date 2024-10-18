@@ -101,10 +101,6 @@ function answerbracket(word, word_length) {
 
 function initialize() {
     answersection.innerHTML = '';
-
-   
-   
-  
     timerReset();
 }
 
@@ -230,7 +226,12 @@ function handleUserInput(input, index) {
         else {
             count++;
             triescounter(count);
+            input.style.border='2px solid red';
+            let wronganswer=new Audio('./assets/audio/breaking-glass-82857.mp3');
+            wronganswer.play();
             mistakes(input.value);
+           
+
         };
     };
    
@@ -272,7 +273,10 @@ function resetingValues(){
     mistakesSection.appendChild(MistakesHeading);
     scoreSection.innerHTML='Score:0';
     timer.textContent='- :--';
+    score=0;
     useranswer='';
+    randombtn.disabled=false;
+    reset.disabled=false;
 }
 
 function preesedPlayAgain(){
@@ -288,6 +292,8 @@ function preesedPlayAgain(){
     pausetime();
     const playagain=document.querySelector('.playagain');
     GameOverSFX();
+    randombtn.disabled=true;
+    reset.disabled=true;
     playagain.addEventListener('click',()=>{
         scoreSection.innerHTML='Score:0';
         notificationSection2.style.display='none';
