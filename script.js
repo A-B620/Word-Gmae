@@ -88,7 +88,7 @@ function answerbracket(word, word_length) {
         input.type = 'text';
         input.maxLength = '1';
         input.pattern = '[A-Za-z]';
-        input.classList.add(`answer${count + 1}`, 'bg-transparent', 'h-[40px]', 'w-[40px]', 'rounded-md', 'outline-none', 'border-2', 'border-[#4A5567]', 'text-white', 'text-center', 'hover:border-[#672171]', 'focus:border-[#672171]');
+        input.classList.add(`answer${count + 1}`, 'bg-transparent', 'h-[40px]', 'w-[40px]', 'rounded-md', 'outline-none', 'border-2', 'border-[#4A5567]', 'text-white', 'text-center', 'hover:border-[#672171]','lowercase' ,'focus:border-[#672171]');
         answersection.appendChild(input);
         answersection.children[0].focus();
         answersection.style.animation='none';
